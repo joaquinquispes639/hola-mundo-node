@@ -5,6 +5,9 @@ function obtenerMensaje() {
   return "¡Hola Mundo desde Node.js en la nube!";
 }
 
+function obtenerHora() {
+  return Date()
+}
 app.get("/", (req, res) => {
   res.send(obtenerMensaje());
 });
